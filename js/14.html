@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.element{
+ width:100px;
+ height:100px;
+ background-color:red;
+ position:relative;
+ left:0; 
+ animation-duration:5s;
+ animation-iteration-count:2;
+}
+
+@keyframes moveToRight{
+ 0%{
+	left:0%;
+ }	
+ 100%{
+	left:80%;
+ }
+}
+
+@keyframes moveTo{
+ 0%{
+	left:0%;
+ }	
+ 100%{
+	right:80%;
+ }
+}
+
+</style>
+</head>
+<body>
+
+<div class="element" style="animation-direction: normal; animation-name: moveTo;">
+</div>
+
+</body>
+</html>		

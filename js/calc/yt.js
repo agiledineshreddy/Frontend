@@ -1,6 +1,6 @@
-function clear(value){
+function Clear(value){
 
-	document.getElementById("clear").value="";
+	document.getElementById("display").value="";
 }
 function Display(value){
 document.getElementById("display").value+=value;
@@ -9,6 +9,5 @@ function calculate(){
 	document.getElementById("display").value=eval(display.value);
 }
 function delet(){
-doc=toString(display.value);
-document.getElementById(display)=doc.value.slice(0,-1);
+document.getElementById("display").value=display.value.slice(0,-1);
 }
